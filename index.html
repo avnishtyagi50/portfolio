@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anupam Dhiman - Developer Portfolio: Projects, Skills, Contact, and Resume">
+    <meta name="keywords" content="Anupam, Web Developer, Portfolio, HTML, CSS, JavaScript, Resume">
+    <meta name="author" content="Anupam Dhiman">
+
+    <title>Avnish - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif !important;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 65);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(191, 191, 224);
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.5px;
+            margin: 60px 80px;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 2rem;
+
+
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .leftsection .btn:hover {
+            color: rgb(191, 191, 224);
+            font-size: 1.2rem;
+        }
+
+        .leftsection .buttons {
+            padding: 23px 0;
+            text-decoration-line: none;
+        }
+
+        .rightsection img {
+            width: 100%;
+
+        }
+
+        .purple {
+            color: rgb(147, 85, 206);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(147, 85, 206);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 150vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 100px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 50px 122px;
+            margin-top: 10px;
+            font-weight: bold;
+            margin-left: 30%;
+            margin-bottom: 50px;
+        }
+
+        .footer-hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.5px;
+            margin: 60px 80px;
+        }
+
+        .pbtn {
+            display: flex;
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            /* font-size: 20px; */
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            width: 100px;
+
+
+
+        }
+
+        .pbtn:hover {
+            color: rgb(191, 191, 224);
+            font-size: 1.2rem;
+
+        }
+
+        .pbtn {
+            display: block;
+            margin-bottom: 500px;
+            margin-top: 10px;
+        }
+
+        .pbtn:last-child {
+            margin-bottom: 50px;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+           
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            max-width: 500px;
+            margin-inline: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form .btn {
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact-form .btn:hover {
+            background-color: rgb(191, 191, 224);
+            color: #1e2167;
+            font-weight: bold;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 90%;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                gap: 10px;
+            }
+
+           /* nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }*/
+
+             ul {
+                flex-direction: column;
+                align-content: left;
+
+                gap: 10px;
+            }
+
+
+
+            .firstsection {
+                flex-direction: column;
+                margin: 50px 0;
+                text-align: center;
+            }
+
+            .firstsection>div {
+                width: 80%;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .rightsection img {
+                width: 100%;
+            }
+
+            .secondsection,
+            .thirdsection {
+                max-width: 95vw;
+                height: auto;
+            }
+
+            .secondsection .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondsection .vertical {
+                display: none;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                margin: 0 auto;
+            }
+
+            .pbtn {
+                font-size: 1rem;
+                width: 80%;
+                text-align: center;
+                margin: 10px auto;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            .left {
+                font-size: 1.2rem;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">Avnish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#sk-ll">Skill&Project</a></li>
+                    <li><a href="#cont-me">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple"> Avnish </span>
+
+                <div>
+                    and I am a Passionate
+                </div>
+                <span id="element"></span>
+                <div class="buttons">
+                   
+
+
+                    <a href="assets/AvnishResume.pdf" download class="btn">Download Resume</a>
+                    <a href="https://github.com/avnishtyagi50" target="_blank" class="btn">Visit Github</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="img/1.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+
+            <div>
+                <h1 id="intro">About</h1>
+                <p class="intpara">Hi, I'm Avnish — a passionate web developer and computer science engineer with
+                    a strong foundation in front-end development. I specialize in building dynamic, visually engaging
+                    websites using HTML, CSS, and JavaScript.
+
+                    With a focus on clean, efficient code and user-centric design, I strive to create seamless,
+                    accessible, and impactful user experiences. I'm always exploring new technologies and best practices
+                    to keep improving and delivering high-quality web solutions.
+
+                </p>
+            </div>
+            <hr>
+            <div id="sk-ll">
+                <h1>Skill & Project</h1>
+                <ul>
+                    <li> Html & CSS</li>
+                    <li> Bootsrap</li>
+                    <li>JavaScript</li>
+                    <li>C Programming</li>
+                    <li>Git Hub</li>
+                </ul>
+                <img>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        Web Based Quiz Application
+                    </h4>
+                    <span class="text-gray">Oct 2024 - Nov 2024</span>
+                    <p>
+                    <ul>
+                        <li>
+                            This is a quiz website designed to test and expand your
+                            knowledge in a fun and interactive way.
+                        </li>
+                        <li>
+                            Work with a team involving different programing languages
+                            where I contributed in HTML, CSS and Javascript
+                        </li>
+                    </ul>
+                    </p>
+                    <h5>
+                        PRESS THIS BUTTON & START QUIZ APPLICATION
+                    </h5>
+                    <a href="https://avnishtyagi50.github.io/quiz/" class="pbtn">Quiz App</a>
+                </div>
+                <div>
+                    <h4>
+                        Zero X - Tic-Tac-Toe
+                    </h4>
+                    <span class="text-gray">Jul 2024</span>
+                    <p>
+                    <ul>
+                        <li>
+                            Zero X is a classic paper-and-pencil game played between
+                            two players, typically using a grid of 3x3 squares.
+                        </li>
+                        <li>
+                            Work with a team involving different programming languages
+                            where I contributed in HTML and CSS
+                        </li>
+                    </ul>
+                    </p>
+                    <h5>
+                        PRESS THIS BUTTON & START GAME
+                    </h5>
+
+                    <a href=" https://avnishtyagi50.github.io/zeroX/" class="pbtn">ZeroX</a>
+
+                </div>
+               <!-- <h1>
+                    SOON
+                </h1>
+                <span class="text-gray">Coding Platform</span>-->
+            </div>
+        </section>
+        <hr>
+        <section id="cont-me" class="thirdsection">
+
+            <h1>Contact Me</h1>
+            <!--<form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">-->
+                <form class="contact-form" id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <!--<button type="submit" class="btn" value="Send Message">Send</button>-->
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+
+        </section>
+    </main>
+
+    <hr class="footer-hr">
+    <footer>
+        <div class="footer">
+            <div>
+                ©️ 2025 Copywrite: Avnish Tyagi
+            </div>
+        </div>
+    </footer>
+
+
+
+
+     <script>
+        // Initialize EmailJS with your actual User ID (replace with your actual user ID)
+        emailjs.init("WhAJrkpebEtSVJwNM"); // Replace with your EmailJS user ID
+
+        // Form submission handler
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Ensure you are passing the correct service ID, template ID, and form element
+            emailjs.sendForm('service_t7fu7zc', 'template_j4fgkh6', this) // 'this' refers to the form element
+                .then(function(response) {
+                    alert("Message sent successfully!");
+                    document.getElementById("contact-form").reset(); // Reset the form
+                }, function(error) {
+                    alert("Failed to send message. Please try again.");
+                    console.error("Error sending email:", error);
+                });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['CS Engineer', 'Web Developer', 'Web designer', 'Softwere Engineer', 'Problem Solver', 'Editor', 'Programer...'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
